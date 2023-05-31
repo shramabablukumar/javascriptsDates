@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dates</title>
+
+</head>
+<style>
+    .container{
+        font-size: 23px;
+        background-color: blanchedalmond;
+        border: 100px solid grey;
+        padding: 34px;
+        margin: 5px;
+        text-align: center;
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+       
+        <h1>GOOD MORNING PALLAVI ENGINEER</h1>
+        
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi nostrum voluptatem.
+             Quo voluptatem mollitia nihil consequatur, accusantium, culpa et unde ipsam ea rerum exp
+             licabo ducimus error accusamus beatae quod nulla quaerat laboriosam eius. Similique sit,
+              sunt ut quos veritatis a vitae eligendi explicabo cum sapiente tempore fugit beatae culpa
+               reprehenderit dolores veniam quia, numquam ipsa. Non ipsa repellat doloribus ipsum sit iste,
+                tempore alias, saepe esse a placeat veniam ea at vero, consequatur eaque. Neque, doloremque
+                 voluptatibus, enim iusto possimus, nihil totam voluptates soluta officiis recusandae alias!
+                  Ipsum laborum soluta nemo fugit error iusto inventore placeat dicta eum. Molestiae!</p>
+        current time <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let now  = new Date();
+        console.log(now)
+        let dt = new Date(0);
+        console.log(dt)
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate);
+        //let newDate = new Date(year,month,date,hours,minutes,seconds,milliseconds);
+        let newDate = new Date(3020,4,6,7,8,9,34);
+        console.log(newDate);
+        let yr = newDate.getFullYear();
+        console.log("The year is",yr);
+        let dat = newDate.getDate();
+        console.log("The date is",dt);
+        let month = newDate.getMonth();
+        console.log("The month is",month);
+        let hours = newDate.getHours();
+        console.log("The hours  is",hours);
+        newDate.setDate(8);
+
+        newDate.setMinutes(29);
+        console.log(newDate)
+        setInterval(updateTime,1000);
+
+
+        function updateTime(){
+            time.innerHTML = new Date();
+        }    
+
+        
+
+    </script>
+</body>
+</html>
